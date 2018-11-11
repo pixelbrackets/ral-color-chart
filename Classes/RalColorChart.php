@@ -1511,4 +1511,35 @@ class RalColorChart
     {
         return $this->colors;
     }
+
+    /**
+     * Returns the grouped list of RAL Classic Colors
+     *
+     * @return array
+     */
+    public function getGroupedList(): array
+    {
+        return $this->groupArray($this->colors, 'rangeindex');
+    }
+
+    /**
+     * Group an array of associative arrays by some key
+     *
+     * @param array $associativeArray Array that stores multiple associative arrays
+     * @param string $groupByKey Property to sort by
+     */
+    public function groupArray(array $associativeArray, string $groupByKey): array
+    {
+        $result = array();
+
+        foreach ($associativeArray as $array) {
+            if (array_key_exists($groupByKey, $array)) {
+                $result[$array[$groupByKey]][] = $array;
+            } else {
+                $result[''][] = $array;
+            }
+        }
+
+        return $result;
+    }
 }
