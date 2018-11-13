@@ -3,10 +3,10 @@ RAL Color Chart
 
 [![Packagist](https://img.shields.io/packagist/v/pixelbrackets/ral-color-chart.svg)](https://packagist.org/packages/pixelbrackets/ral-color-chart/)
 
-This package provides a static table of RAL Classic Colors.
+This package provides a static table of [RAL Classic](https://www.ral-farben.de/) Colors.
 
-The array contains the RAL Name, Index, English Name, German Name and a compatible
-Hex Color Code.
+The object may retun an array which contains the RAL Number, Range Index, 
+English Name, German Name and a compatible Hex Color Code.
 
 Requirements
 ------------
