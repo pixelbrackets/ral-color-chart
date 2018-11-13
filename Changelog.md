@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2018-11-13 Dan Untenzu <mail@pixelbrackets.de>
+
+  * 1.2.0
+  * FEATURE Add list of ranges
+
 2018-11-12 Dan Untenzu <mail@pixelbrackets.de>
 
   * 1.1.0
