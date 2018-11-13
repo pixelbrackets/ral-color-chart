@@ -1503,6 +1503,59 @@ class RalColorChart
     ];
 
     /**
+     * The range index of the RAL Classic Colors
+     *
+     * @var array
+     */
+    protected $ranges = [
+        1 => [
+            'rangeindex' => '1',
+            'nameEnglish' => 'Yellow and beige',
+            'nameGerman' => 'Gelb und Beige',
+        ],
+        2 => [
+            'rangeindex' => '2',
+            'nameEnglish' => 'Orange',
+            'nameGerman' => 'Orange',
+        ],
+        3 => [
+            'rangeindex' => '3',
+            'nameEnglish' => 'Red',
+            'nameGerman' => 'Rot',
+        ],
+        4 => [
+            'rangeindex' => '4',
+            'nameEnglish' => 'Violet',
+            'nameGerman' => 'Violett',
+        ],
+        5 => [
+            'rangeindex' => '5',
+            'nameEnglish' => 'Blue',
+            'nameGerman' => 'Blau',
+        ],
+        6 => [
+            'rangeindex' => '6',
+            'nameEnglish' => 'Green',
+            'nameGerman' => 'Grün',
+        ],
+        7 => [
+            'rangeindex' => '7',
+            'nameEnglish' => 'Grey',
+            'nameGerman' => 'Grau',
+        ],
+        8 => [
+            'rangeindex' => '8',
+            'nameEnglish' => 'Brown',
+            'nameGerman' => 'Braun',
+        ],
+        9 => [
+            'rangeindex' => '9',
+            'nameEnglish' => 'White and Black',
+            'nameGerman' => 'Weiß und Schwarz',
+        ]
+    ];
+
+    /**
      * Returns the list of RAL Classic Colors
      *
      * @return array
@@ -1520,6 +1573,16 @@ class RalColorChart
     public function getGroupedList(): array
     {
         return $this->groupArray($this->colors, 'rangeindex');
+    }
+
+    /**
+     * Returns the list of RAL Classic Ranges
+     *
+     * @return array
+     */
+    public function getRangeList(): array
+    {
+        return $this->ranges;
     }
 
     /**
