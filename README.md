@@ -26,10 +26,20 @@ https://gitlab.com/pixelbrackets/ral-color-chart/
 Usage
 -----
 
-1. Get a complete list of all RAL colors
+1. Get an array with all RAL Classic Colors
    ```php
    $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
    $colors = $colorChart->getList();
+   ```
+1. Get an array with all RAL Classic Ranges
+   ```php
+   $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
+   $ranges = $colorChart->getRangeList();
+   ```
+1. Get an array with all RAL Classic Colors grouped by range index
+   ```php
+   $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
+   $groupedColors = $colorChart->getGroupedList();
    ```
 
 License

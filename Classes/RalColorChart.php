@@ -1566,7 +1566,7 @@ class RalColorChart
     }
 
     /**
-     * Returns the grouped list of RAL Classic Colors
+     * Returns the list of RAL Classic Colors grouped by range index
      *
      * @return array
      */
