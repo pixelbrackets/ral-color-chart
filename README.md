@@ -8,6 +8,8 @@ This package provides a static table of [RAL Classic](https://www.ral-farben.de/
 The object may retun an array which contains the RAL Number, Range Index, 
 English Name, German Name and a compatible Hex Color Code.
 
+![Screenshot](./docs/screenshot.png)
+
 ## Requirements
 
 * PHP
