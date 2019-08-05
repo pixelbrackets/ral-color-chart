@@ -57,7 +57,7 @@ Dan Untenzu (<mail@pixelbrackets.de> / [@pixelbrackets](https://pixelbrackets.de
 Changelog
 ---------
 
-[./Changelog.md](./Changelog.md)
+See [./CHANGELOG.md](CHANGELOG.md)
 
 Contribution
 ------------
