@@ -1,6 +1,6 @@
 <?php
 
-require_once '../Classes/RalColorChart.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
 
