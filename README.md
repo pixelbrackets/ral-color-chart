@@ -1,7 +1,9 @@
-RAL Color Chart
-===============
+# RAL Color Chart
 
-[![Packagist](https://img.shields.io/packagist/v/pixelbrackets/ral-color-chart.svg)](https://packagist.org/packages/pixelbrackets/ral-color-chart/)
+[![Version](https://img.shields.io/packagist/v/pixelbrackets/ral-color-chart.svg?style=flat-square)](https://packagist.org/packages/pixelbrackets/ral-color-chart/)
+[![Build Status](https://img.shields.io/gitlab/pipeline/pixelbrackets/ral-color-chart?style=flat-square)](https://gitlab.com/pixelbrackets/ral-color-chart/pipelines)
+[![Made With](https://img.shields.io/badge/made_with-php-blue?style=flat-square)](https://gitlab.com/pixelbrackets/ral-color-chart#requirements)
+[![License](https://img.shields.io/badge/license-gpl--2.0--or--later-blue.svg?style=flat-square)](https://spdx.org/licenses/GPL-2.0-or-later.html)
 
 This package provides a static table of [RAL Classic](https://www.ral-farben.de/) Colors.
 
@@ -12,7 +14,7 @@ English Name, German Name and a compatible Hex Color Code.
 
 ## Requirements
 
-* PHP
+- PHP
 
 ## Installation
 
