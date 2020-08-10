@@ -1576,6 +1576,18 @@ class RalColorChart
     }
 
     /**
+     * Return a single RAL Classic Color
+     *
+     * @param string $numberCode Number code of the RAL color, eg. "RAL 2010"
+     * @return array Is empty if no matching color is found
+     */
+    public function getSingleColor($numberCode = ''): array
+    {
+        $key = array_search($numberCode, array_column($this->colors, 'number'), true) ?: null;
+        return $this->colors[$key] ?? [];
+    }
+
+    /**
      * Returns the list of RAL Classic Ranges
      *
      * @return array

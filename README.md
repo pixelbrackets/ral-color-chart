@@ -41,6 +41,11 @@ https://gitlab.com/pixelbrackets/ral-color-chart/
    $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
    $groupedColors = $colorChart->getGroupedList();
    ```
+1. Get an array of a single RAL Classic Color
+   ```php
+   $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
+   $color = $colorChart->getSingleColor('RAL 2010');
+   ```
 
 ## License
 
