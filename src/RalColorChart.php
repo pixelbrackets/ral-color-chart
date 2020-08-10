@@ -1602,8 +1602,9 @@ class RalColorChart
      *
      * @param array $associativeArray Array that stores multiple associative arrays
      * @param string $groupByKey Property to sort by
+     * @return array
      */
-    public function groupArray(array $associativeArray, string $groupByKey): array
+    protected function groupArray(array $associativeArray, string $groupByKey): array
     {
         $result = array();
 
