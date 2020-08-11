@@ -5,12 +5,12 @@
 [![Made With](https://img.shields.io/badge/made_with-php-blue?style=flat-square)](https://gitlab.com/pixelbrackets/ral-color-chart#requirements)
 [![License](https://img.shields.io/badge/license-gpl--2.0--or--later-blue.svg?style=flat-square)](https://spdx.org/licenses/GPL-2.0-or-later.html)
 
-This package provides a static table of [RAL Classic](https://www.ral-farben.de/) Colors.
+This package provides a static list of [RAL Classic](https://www.ral-farben.de/) Colors.
 
-The object may retun an array which contains the RAL Number, Range Index, 
+The object returns an array which contains the RAL Number, Range Index, 
 English Name, German Name and a compatible Hex Color Code.
 
-![Screenshot](./docs/screenshot.png)
+![Screenshot](docs/screenshot.png)
 
 ## Requirements
 
@@ -25,6 +25,8 @@ Packagist Entry https://packagist.org/packages/pixelbrackets/ral-color-chart/
 https://gitlab.com/pixelbrackets/ral-color-chart/
 
 ## Usage
+
+See [tests/demo.php](./tests/demo.php)
 
 1. Get an array with all RAL Classic Colors
    ```php

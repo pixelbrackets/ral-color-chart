@@ -1,6 +1,6 @@
 {
     "name": "pixelbrackets/ral-color-chart",
-    "description": "This package provides a static table of RAL Classic Colors",
+    "description": "This package provides a static list of RAL Classic Colors",
     "license": "GPL-2.0-or-later",
     "type": "library",
     "require": {

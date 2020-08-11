@@ -1,0 +1,14 @@
+$colors = \Pixelbrackets\RalColorChart\RalColorChart::getColors();
+
+// Returns an array with all RAL Classic Colors
+array [
+  […]
+  [
+    'number' => 'RAL 2001',
+    'rangeindex' => '2',
+    'nameEnglish' => 'Red orange',
+    'nameGerman' => 'Rotorange',
+    'hex' => 'BE4E20',
+  ],
+  […]
+]
