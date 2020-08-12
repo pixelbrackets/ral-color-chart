@@ -21,5 +21,5 @@ foreach ($colorGroups as $colorIndex => $colorGroup) {
 }
 
 echo PHP_EOL . '*Single color, as JSON data*' . PHP_EOL;
-$color = $colorChart->getSingleColor('RAL 2010');
+$color = \Pixelbrackets\RalColorChart\RalColorChart::getSingleColor('RAL 2010');
 echo json_encode($color, JSON_PRETTY_PRINT);

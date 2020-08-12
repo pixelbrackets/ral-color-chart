@@ -8,7 +8,7 @@ class RalColorChart
      *
      * @var array
      */
-    protected $colors = [
+    protected static $colors = [
         [
             'number' => 'RAL 1000',
             'rangeindex' => '1',
@@ -1507,7 +1507,7 @@ class RalColorChart
      *
      * @var array
      */
-    protected $ranges = [
+    protected static $ranges = [
         1 => [
             'rangeindex' => '1',
             'nameEnglish' => 'Yellow and beige',
@@ -1560,9 +1560,9 @@ class RalColorChart
      *
      * @return array
      */
-    public function getList(): array
+    public static function getList(): array
     {
-        return $this->colors;
+        return self::$colors;
     }
 
     /**
@@ -1570,9 +1570,9 @@ class RalColorChart
      *
      * @return array
      */
-    public function getGroupedList(): array
+    public static function getGroupedList(): array
     {
-        return $this->groupArray($this->colors, 'rangeindex');
+        return self::groupArray(self::$colors, 'rangeindex');
     }
 
     /**
@@ -1581,10 +1581,10 @@ class RalColorChart
      * @param string $numberCode Number code of the RAL color, eg. "RAL 2010"
      * @return array Is empty if no matching color is found
      */
-    public function getSingleColor($numberCode = ''): array
+    public static function getSingleColor($numberCode = ''): array
     {
-        $key = array_search($numberCode, array_column($this->colors, 'number'), true) ?: null;
-        return $this->colors[$key] ?? [];
+        $key = array_search($numberCode, array_column(self::$colors, 'number'), true) ?: null;
+        return self::$colors[$key] ?? [];
     }
 
     /**
@@ -1592,9 +1592,9 @@ class RalColorChart
      *
      * @return array
      */
-    public function getRangeList(): array
+    public static function getRangeList(): array
     {
-        return $this->ranges;
+        return self::$ranges;
     }
 
     /**
@@ -1604,7 +1604,7 @@ class RalColorChart
      * @param string $groupByKey Property to sort by
      * @return array
      */
-    protected function groupArray(array $associativeArray, string $groupByKey): array
+    protected static function groupArray(array $associativeArray, string $groupByKey): array
     {
         $result = array();
 
