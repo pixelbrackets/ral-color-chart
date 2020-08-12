@@ -1583,8 +1583,8 @@ class RalColorChart
      */
     public static function getColor($numberCode = ''): array
     {
-        $key = array_search($numberCode, array_column(self::$colors, 'number'), true) ?: null;
-        return self::$colors[$key] ?? [];
+        $key = array_search($numberCode, array_column(self::$colors, 'number'), true);
+        return ($key === false)? [] : self::$colors[$key];
     }
 
     /**

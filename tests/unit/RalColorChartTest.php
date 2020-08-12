@@ -19,7 +19,7 @@ class RalColorChartTest extends TestCase
     public function testGetColor()
     {
         $this->assertEmpty(RalColorChart::getColor());
-        $this->assertNotEmpty(RalColorChart::getColor('RAL 2001'));
+        $this->assertNotEmpty(RalColorChart::getColor('RAL 1000'));
         $this->assertEmpty(RalColorChart::getColor('RAL DoesNotExist 1337'));
         $this->assertContains('Signalorange', RalColorChart::getColor('RAL 2010'));
     }
