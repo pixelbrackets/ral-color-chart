@@ -29,23 +29,23 @@ https://gitlab.com/pixelbrackets/ral-color-chart/
 1. Get an array with all RAL Classic Colors
    ```php
    $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
-   $colors = $colorChart->getList();
+   $colors = $colorChart->getColors();
    ```
     Or as static method call
    ```php
-   $colors = \Pixelbrackets\RalColorChart\RalColorChart::getList();
+   $colors = \Pixelbrackets\RalColorChart\RalColorChart::getColors();
    ```
 1. Get an array with all RAL Classic Ranges
    ```php
-   $ranges = \Pixelbrackets\RalColorChart\RalColorChart::getRangeList();
+   $ranges = \Pixelbrackets\RalColorChart\RalColorChart::getRanges();
    ```
 1. Get an array with all RAL Classic Colors grouped by range index
    ```php
-   $groupedColors = \Pixelbrackets\RalColorChart\RalColorChart::getGroupedList();
+   $groupedColors = \Pixelbrackets\RalColorChart\RalColorChart::getColorsGroupedByRange();
    ```
 1. Get an array of a single RAL Classic Color
    ```php
-   $color = \Pixelbrackets\RalColorChart\RalColorChart::getSingleColor('RAL 2010');
+   $color = \Pixelbrackets\RalColorChart\RalColorChart::getColor('RAL 2010');
    ```
 
 ## License

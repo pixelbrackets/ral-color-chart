@@ -1560,7 +1560,7 @@ class RalColorChart
      *
      * @return array
      */
-    public static function getList(): array
+    public static function getColors(): array
     {
         return self::$colors;
     }
@@ -1570,7 +1570,7 @@ class RalColorChart
      *
      * @return array
      */
-    public static function getGroupedList(): array
+    public static function getColorsGroupedByRange(): array
     {
         return self::groupArray(self::$colors, 'rangeindex');
     }
@@ -1581,7 +1581,7 @@ class RalColorChart
      * @param string $numberCode Number code of the RAL color, eg. "RAL 2010"
      * @return array Is empty if no matching color is found
      */
-    public static function getSingleColor($numberCode = ''): array
+    public static function getColor($numberCode = ''): array
     {
         $key = array_search($numberCode, array_column(self::$colors, 'number'), true) ?: null;
         return self::$colors[$key] ?? [];
@@ -1592,7 +1592,7 @@ class RalColorChart
      *
      * @return array
      */
-    public static function getRangeList(): array
+    public static function getRanges(): array
     {
         return self::$ranges;
     }
