@@ -58,7 +58,7 @@ The GNU General Public License can be found at http://www.gnu.org/copyleft/gpl.h
 
 ## Author
 
-Dan Untenzu (<mail@pixelbrackets.de> / [@pixelbrackets](https://pixelbrackets.de))
+Dan Kleine (<mail@pixelbrackets.de> / [@pixelbrackets](https://pixelbrackets.de))
 
 ## Changelog
 

@@ -1,5 +1,10 @@
 # Changelog
 
+2024-08-13 Dan Kleine <mail@pixelbrackets.de>
+
+  * 2.0.2
+  * BUGFIX Provide valid green hex codes
+
 2020-08-12 Dan Untenzu <mail@pixelbrackets.de>
 
   * 2.0.1
