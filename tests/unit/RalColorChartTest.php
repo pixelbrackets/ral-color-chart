@@ -23,4 +23,11 @@ class RalColorChartTest extends TestCase
         $this->assertEmpty(RalColorChart::getColor('RAL DoesNotExist 1337'));
         $this->assertContains('Signalorange', RalColorChart::getColor('RAL 2010'));
     }
+
+    public function testHexValue()
+    {
+        $colorChart = new \Pixelbrackets\RalColorChart\RalColorChart();
+        $color = $colorChart->getColor('RAL 6024');
+        $this->assertEquals('008754', $color['hex']);
+    }
 }

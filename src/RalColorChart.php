@@ -910,7 +910,7 @@ class RalColorChart
             'rangeindex' => '6',
             'nameEnglish' => 'Traffic green',
             'nameGerman' => 'Verkehrsgrün',
-            'hex' => '8754',
+            'hex' => '008754',
         ],
         [
             'number' => 'RAL 6025',
@@ -945,7 +945,7 @@ class RalColorChart
             'rangeindex' => '6',
             'nameEnglish' => 'Mint green',
             'nameGerman' => 'Minzgrün',
-            'hex' => '7243',
+            'hex' => '007243',
         ],
         [
             'number' => 'RAL 6032',
